@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <form id="form">
-        <div class="form-container">
+    <form id="form" action="./result.html">
+        <div class="form-container" >
             <div class="rightside">
                 <h1>General Information</h1>
                 <div class="name">
@@ -19,10 +19,10 @@
                     <input type="text" name="last-name" placeholder="Last Name" />
                 </div>
                 <input type="email" name="email" placeholder="Email" />
-                <input type="date" name="birth-date">
+                <input type="date" name="birth-date" id="date">
                 <input type="text" name="Company" placeholder="Company">
                 <select>
-                    <option>Монгол</option>
+                    <option>Position</option>
                     <option>Гадаад</option>
                     <option>Харь гариг</option>
                 </select>
@@ -34,13 +34,13 @@
                 <div class="name">
                     <input type="number" name="zip" placeholder="Zip code" />
                     <select>
-                        <option>Монгол</option>
+                        <option>Place</option>
                         <option>Гадаад</option>
                         <option>Харь гариг</option>
                     </select>
                 </div>
                 <select>
-                    <option>Монгол</option>
+                    <option>Country</option>
                     <option>Гадаад</option>
                     <option>Харь гариг</option>
                 </select>
@@ -48,7 +48,11 @@
                     <input type="number" name="code" placeholder="Code" />
                     <input type="number" name="phone" placeholder="Phone Number" />
                 </div>
-                <button>Register Badge</button>
+                <div class="condition">
+                <input type="radio" name="condition" id="condition">
+                <label for="condition" >I do accept the <a href="#">Terms and conditions</a> of your site.</label>
+                </div>
+                <input type="submit" value="Register badge" id="button">
             </div>
         </div>
 
