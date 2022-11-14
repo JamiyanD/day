@@ -4,31 +4,75 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 .form-container{
-    width: 1000px;
+    
+    width: 1500px;
     height: 90vh;
     background-color:white;
     display: flex;
-   
+   border-radius: 20px;
 }
 .rightside{
     display: flex;
     width: 50%;
-    height: 500px;
+    height: 70%;
     flex-direction: column;
     justify-content: space-around;
     padding: 50px;
 }
+.rightside h1{
+    color: rgb(10, 97, 237);
+    font-size: 48px;
+}
 .leftside{
     display: flex;
     width: 50%;
-    height: 500px;
+    border-radius: 0px 20px 20px 0;
     flex-direction: column;
     justify-content: space-around;
     padding: 50px;
     background-color: rgb(10, 97, 237);
 }
+.leftside h1{
+    color: white;
+    font-size: 48px;
+}
 .side{
     display: flex;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.name input{
+    width: 40%;
+}
+input{
+    border:none;
+    border-bottom: 1px solid grey;
+    height: 40px;
+}
+.leftside input{
+    background-color:rgb(10, 97, 237) ;
+}
+select{
+    border:none;
+    border-bottom: 1px solid grey;
+    font-size:32px;
+}
+.leftside select{
+    background-color:rgb(10, 97, 237) ;
+}
+.leftside ::placeholder{
+    color: white;
+}
+::placeholder{
+    font-size: 32px;
+}
+button{
+    width: 150px;
+    border-radius: 20px;
+    height: 40px;
 }

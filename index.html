@@ -11,13 +11,13 @@
 
 <body>
     <form id="form">
-    <div class="form-container">
+        <div class="form-container">
             <div class="rightside">
                 <h1>General Information</h1>
-                <div>
-                <input type="text" name="first-name" placeholder="First Name" />
-                <input type="text" name="last-name" placeholder="Last Name" />
-            </div>
+                <div class="name">
+                    <input type="text" name="first-name" placeholder="First Name" />
+                    <input type="text" name="last-name" placeholder="Last Name" />
+                </div>
                 <input type="email" name="email" placeholder="Email" />
                 <input type="date" name="birth-date">
                 <input type="text" name="Company" placeholder="Company">
@@ -31,25 +31,29 @@
                 <h1>Contact Details</h1>
                 <input type="text" name="street" placeholder="Street" />
                 <input type="text" name="information" placeholder="Additional Information" />
-                <input type="number" name="zip" placeholder="Zip code" />
+                <div class="name">
+                    <input type="number" name="zip" placeholder="Zip code" />
+                    <select>
+                        <option>Монгол</option>
+                        <option>Гадаад</option>
+                        <option>Харь гариг</option>
+                    </select>
+                </div>
                 <select>
                     <option>Монгол</option>
                     <option>Гадаад</option>
                     <option>Харь гариг</option>
                 </select>
-                <select>
-                    <option>Монгол</option>
-                    <option>Гадаад</option>
-                    <option>Харь гариг</option>
-                </select>
-                <input type="number" name="code" placeholder="Code" />
-                <input type="number" name="phone" placeholder="Phone Number" />
+                <div class="name">
+                    <input type="number" name="code" placeholder="Code" />
+                    <input type="number" name="phone" placeholder="Phone Number" />
+                </div>
                 <button>Register Badge</button>
             </div>
         </div>
-        
-    </div>
-</form>
+
+        </div>
+    </form>
 
 </body>
 
